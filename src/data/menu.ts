@@ -60,6 +60,6 @@ export const MENU: MenuItem[] = [
 export const HOTEL = {
   name: "Baniya Hotel",
   tagline: "Authentic flavours, served to your room",
-  phone: "+919634631670",
-  whatsapp: "919634631670",
+  phone: "+919368042721",
+  whatsapp: "919368042721",
 };
