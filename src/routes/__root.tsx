@@ -79,7 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Baniya Hotel \u2014 In-Room Dining" },
-      { name: "description", content: "Scan, browse and order authentic Indian food directly to your room at Baniya Hotel." },
+      {
+        name: "description",
+        content:
+          "Scan, browse and order authentic Indian food directly to your room at Baniya Hotel.",
+      },
       { name: "author", content: "Baniya Hotel" },
       { name: "theme-color", content: "#7A1F1F" },
       { property: "og:title", content: "Baniya Hotel \u2014 In-Room Dining" },
@@ -88,10 +92,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap",
+      },
       { rel: "manifest", href: "/manifest.webmanifest" },
     ],
   }),
@@ -103,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>

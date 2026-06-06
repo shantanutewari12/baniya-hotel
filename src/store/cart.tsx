@@ -1,7 +1,10 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { MenuItem } from "@/data/menu";
 
-export interface CartLine { item: MenuItem; qty: number }
+export interface CartLine {
+  item: MenuItem;
+  qty: number;
+}
 
 interface CartCtx {
   lines: CartLine[];
@@ -23,11 +26,17 @@ export function CartProvider({ children }: { children: ReactNode }) {
     try {
       const raw = localStorage.getItem(KEY);
       if (raw) setLines(JSON.parse(raw));
-    } catch {}
+    } catch {
+      // ignore
+    }
   }, []);
 
   useEffect(() => {
-    try { localStorage.setItem(KEY, JSON.stringify(lines)); } catch {}
+    try {
+      localStorage.setItem(KEY, JSON.stringify(lines));
+    } catch {
+      // ignore
+    }
   }, [lines]);
 
   const add = (item: MenuItem) =>

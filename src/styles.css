@@ -68,19 +68,19 @@
 :root {
   --radius: 0.875rem;
   /* Baniya Hotel — Warm Indian Heritage */
-  --background: oklch(0.985 0.018 85);          /* #FFF8EC cream */
-  --foreground: oklch(0.22 0.035 40);           /* deep cocoa */
+  --background: oklch(0.985 0.018 85); /* #FFF8EC cream */
+  --foreground: oklch(0.22 0.035 40); /* deep cocoa */
   --card: oklch(0.995 0.012 85);
   --card-foreground: oklch(0.22 0.035 40);
   --popover: oklch(0.995 0.012 85);
   --popover-foreground: oklch(0.22 0.035 40);
-  --primary: oklch(0.41 0.135 25);              /* #7A1F1F crimson */
+  --primary: oklch(0.41 0.135 25); /* #7A1F1F crimson */
   --primary-foreground: oklch(0.985 0.018 85);
   --secondary: oklch(0.94 0.04 80);
-  --secondary-foreground: oklch(0.30 0.06 35);
+  --secondary-foreground: oklch(0.3 0.06 35);
   --muted: oklch(0.94 0.025 80);
   --muted-foreground: oklch(0.45 0.04 50);
-  --accent: oklch(0.78 0.13 75);                /* #D4A24C gold */
+  --accent: oklch(0.78 0.13 75); /* #D4A24C gold */
   --accent-foreground: oklch(0.22 0.035 40);
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.985 0.018 85);
@@ -88,11 +88,11 @@
   --input: oklch(0.92 0.025 75);
   --ring: oklch(0.78 0.13 75);
   --veg: oklch(0.55 0.16 145);
-  --nonveg: oklch(0.50 0.20 28);
-  --gradient-hero: linear-gradient(135deg, oklch(0.41 0.135 25) 0%, oklch(0.32 0.10 30) 100%);
-  --gradient-gold: linear-gradient(135deg, oklch(0.82 0.14 78) 0%, oklch(0.70 0.15 70) 100%);
+  --nonveg: oklch(0.5 0.2 28);
+  --gradient-hero: linear-gradient(135deg, oklch(0.41 0.135 25) 0%, oklch(0.32 0.1 30) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.82 0.14 78) 0%, oklch(0.7 0.15 70) 100%);
   --shadow-warm: 0 10px 30px -10px oklch(0.41 0.135 25 / 0.25);
-  --shadow-card: 0 4px 16px -4px oklch(0.30 0.08 40 / 0.12);
+  --shadow-card: 0 4px 16px -4px oklch(0.3 0.08 40 / 0.12);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -109,38 +109,40 @@
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  /* Warm dark food-app theme — matching reference image */
+  --background: oklch(0.12 0.018 55); /* very dark warm brown */
+  --foreground: oklch(0.95 0.008 80); /* warm white */
+  --card: oklch(0.18 0.025 58); /* dark card */
+  --card-foreground: oklch(0.95 0.008 80);
+  --popover: oklch(0.18 0.025 58);
+  --popover-foreground: oklch(0.95 0.008 80);
+  --primary: oklch(0.74 0.15 78); /* gold */
+  --primary-foreground: oklch(0.12 0.018 55);
+  --secondary: oklch(0.22 0.022 58);
+  --secondary-foreground: oklch(0.85 0.012 80);
+  --muted: oklch(0.22 0.022 58);
+  --muted-foreground: oklch(0.52 0.022 70);
+  --accent: oklch(0.74 0.15 78); /* gold */
+  --accent-foreground: oklch(0.12 0.018 55);
+  --destructive: oklch(0.65 0.22 27);
+  --destructive-foreground: oklch(0.95 0.008 80);
+  --border: oklch(0.26 0.02 58);
+  --input: oklch(0.22 0.022 58);
+  --ring: oklch(0.74 0.15 78);
+  --veg: oklch(0.65 0.18 145);
+  --nonveg: oklch(0.6 0.22 28);
+  --gradient-hero: linear-gradient(135deg, oklch(0.18 0.03 55) 0%, oklch(0.13 0.02 55) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.78 0.16 78) 0%, oklch(0.65 0.14 70) 100%);
+  --shadow-warm: 0 10px 30px -10px oklch(0.05 0.01 50 / 0.8);
+  --shadow-card: 0 4px 20px -4px oklch(0.05 0.01 50 / 0.6);
+  --sidebar: oklch(0.18 0.025 58);
+  --sidebar-foreground: oklch(0.95 0.008 80);
+  --sidebar-primary: oklch(0.74 0.15 78);
+  --sidebar-primary-foreground: oklch(0.12 0.018 55);
+  --sidebar-accent: oklch(0.22 0.022 58);
+  --sidebar-accent-foreground: oklch(0.95 0.008 80);
+  --sidebar-border: oklch(0.26 0.02 58);
+  --sidebar-ring: oklch(0.74 0.15 78);
 }
 
 @layer base {
@@ -155,8 +157,171 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, .font-display {
+  h1,
+  h2,
+  h3,
+  .font-display {
     font-family: var(--font-display);
     letter-spacing: -0.01em;
   }
+}
+
+/* ============================================================
+   BOOK MENU — ANIMATIONS & UTILITIES
+   ============================================================ */
+
+/* Book cover opening animation */
+@keyframes book-cover-open {
+  0% {
+    transform: perspective(1100px) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+  45% {
+    transform: perspective(1100px) rotateY(-75deg) scale(0.9);
+    opacity: 0.4;
+  }
+  100% {
+    transform: perspective(1100px) rotateY(-90deg) scale(0.85);
+    opacity: 0;
+  }
+}
+
+/* Page entering from the RIGHT (next page) */
+@keyframes page-enter-right {
+  from {
+    transform: perspective(900px) translateX(55px) rotateY(-10deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(900px) translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Page entering from the LEFT (prev page) */
+@keyframes page-enter-left {
+  from {
+    transform: perspective(900px) translateX(-55px) rotateY(10deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(900px) translateX(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Confetti falling */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-30px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(600deg) scale(0.4);
+    opacity: 0;
+  }
+}
+
+/* Success icon scale bounce */
+@keyframes success-scale-in {
+  0% {
+    transform: scale(0) rotate(-20deg);
+  }
+  55% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  75% {
+    transform: scale(0.92) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Pulsing ring for success page */
+@keyframes ring-expand {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Staggered fade-up for text */
+@keyframes fade-up {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Cover shine sweep */
+@keyframes cover-shine {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 160%;
+  }
+}
+
+/* Utility classes */
+.animate-book-cover-open {
+  animation: book-cover-open 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.animate-page-enter-right {
+  animation: page-enter-right 0.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-page-enter-left {
+  animation: page-enter-left 0.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-confetti {
+  animation: confetti-fall linear both;
+}
+.animate-success-icon {
+  animation: success-scale-in 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s both;
+}
+.animate-ring {
+  animation: ring-expand 1.2s ease-out infinite;
+}
+.animate-fade-up-1 {
+  animation: fade-up 0.4s ease 0.4s both;
+}
+.animate-fade-up-2 {
+  animation: fade-up 0.4s ease 0.55s both;
+}
+.animate-fade-up-3 {
+  animation: fade-up 0.4s ease 0.7s both;
+}
+.animate-fade-up-4 {
+  animation: fade-up 0.4s ease 0.85s both;
+}
+
+/* Paper texture for book pages */
+.book-page-bg {
+  background-image:
+    linear-gradient(90deg, oklch(0.92 0.02 75 / 0.4) 1px, transparent 1px),
+    linear-gradient(oklch(0.92 0.02 75 / 0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Leather texture for book cover */
+.cover-leather {
+  background: linear-gradient(
+    135deg,
+    oklch(0.28 0.1 28) 0%,
+    oklch(0.2 0.08 25) 35%,
+    oklch(0.25 0.09 27) 60%,
+    oklch(0.18 0.07 24) 100%
+  );
 }
