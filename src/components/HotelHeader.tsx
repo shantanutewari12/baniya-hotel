@@ -6,10 +6,10 @@ import { HOTEL } from "@/data/menu";
 export function HotelHeader({ room }: { room?: string | null }) {
   const { count } = useCart();
   return (
-    <header className="sticky top-0 z-30 border-b border-border/50 bg-[var(--gradient-hero)] text-primary-foreground shadow-[var(--shadow-warm)]">
+    <header className="sticky top-0 z-30 border-b border-border/50 bg-[image:var(--gradient-hero)] text-primary-foreground shadow-[var(--shadow-warm)]">
       <div className="mx-auto flex max-w-2xl items-center justify-between gap-3 px-4 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <div className="grid h-10 w-10 place-items-center rounded-full bg-[var(--gradient-gold)] font-display text-lg font-black text-primary shadow-inner">
+          <div className="grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-gold)] font-display text-lg font-black text-primary shadow-inner">
             B
           </div>
           <div className="leading-tight">
@@ -25,7 +25,7 @@ export function HotelHeader({ room }: { room?: string | null }) {
             <Phone className="h-4 w-4" />
           </a>
           <Link to="/cart" search={room ? { room } : undefined} aria-label="View cart"
-            className="relative grid h-10 w-10 place-items-center rounded-full bg-[var(--gradient-gold)] text-primary shadow">
+            className="relative grid h-10 w-10 place-items-center rounded-full bg-[image:var(--gradient-gold)] text-primary shadow">
             <ShoppingBag className="h-5 w-5" />
             {count > 0 && (
               <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground ring-2 ring-background">

@@ -56,7 +56,7 @@ function Index() {
     <div className="min-h-screen bg-background pb-16">
       <HotelHeader room={room} />
 
-      <section className="bg-[var(--gradient-hero)] text-primary-foreground">
+      <section className="bg-[image:var(--gradient-hero)] text-primary-foreground">
         <div className="mx-auto max-w-2xl px-4 pb-6 pt-2">
           <p className="font-display text-2xl font-bold leading-tight">{HOTEL.tagline}</p>
           <p className="mt-1 text-sm text-primary-foreground/75">

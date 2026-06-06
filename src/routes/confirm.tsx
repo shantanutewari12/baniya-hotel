@@ -23,9 +23,9 @@ export const Route = createFileRoute("/confirm")({
 function ConfirmPage() {
   const { name, room } = Route.useSearch();
   return (
-    <div className="grid min-h-screen place-items-center bg-[var(--gradient-hero)] px-6 text-primary-foreground">
+    <div className="grid min-h-screen place-items-center bg-[image:var(--gradient-hero)] px-6 text-primary-foreground">
       <div className="w-full max-w-md text-center">
-        <div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-[var(--gradient-gold)] text-primary shadow-2xl">
+        <div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-[image:var(--gradient-gold)] text-primary shadow-2xl">
           <CheckCircle2 className="h-10 w-10" />
         </div>
         <h1 className="mt-6 font-display text-3xl font-bold">Order sent!</h1>
@@ -36,7 +36,7 @@ function ConfirmPage() {
         </p>
         <div className="mt-8 flex flex-col gap-3">
           <a href={`tel:${HOTEL.phone}`}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--gradient-gold)] px-5 py-3 font-semibold text-primary shadow-lg">
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[image:var(--gradient-gold)] px-5 py-3 font-semibold text-primary shadow-lg">
             <Phone className="h-4 w-4" /> Call Reception
           </a>
           <Link to="/" search={room ? { room } : undefined}
