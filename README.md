@@ -1,6 +1,6 @@
-# Baniya Hotel — In-Room Dining Web App
+# Hotel E-Menu — In-Room Dining Web App
 
-A premium, mobile-first web application for Baniya Hotel guests to scan, browse, and order authentic Indian cuisine directly to their rooms.
+A premium, mobile-first web application for hotel guests to scan, browse, and order authentic Indian cuisine directly to their rooms.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-https%3A%2F%2Fbaniya--hotel.vercel.app-7A1F1F?style=for-the-badge)](https://baniya-hotel.vercel.app)
 

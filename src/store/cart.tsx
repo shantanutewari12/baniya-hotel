@@ -17,7 +17,7 @@ interface CartCtx {
 }
 
 const Ctx = createContext<CartCtx | null>(null);
-const KEY = "baniya-cart-v1";
+const KEY = "hotel-cart-v1";
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [lines, setLines] = useState<CartLine[]>([]);

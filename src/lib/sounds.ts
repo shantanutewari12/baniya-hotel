@@ -1,4 +1,4 @@
-/** Web Audio-based sound effects for Baniya Hotel menu book UI */
+/** Web Audio-based sound effects for Hotel E-Menu book UI */
 
 let _ctx: AudioContext | null = null;
 

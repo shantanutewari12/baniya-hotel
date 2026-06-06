@@ -14,7 +14,7 @@ export const Route = createFileRoute("/confirm")({
   validateSearch: (s) => search.parse(s),
   head: () => ({
     meta: [
-      { title: "Order Sent — Baniya Hotel" },
+      { title: "Order Sent — Hotel E-Menu" },
       { name: "description", content: "Your order has been sent to reception." },
       { name: "robots", content: "noindex" },
     ],

@@ -71,7 +71,7 @@ export const MENU: MenuItem[] = [
   // Lunch
   {
     id: "l1",
-    name: "Baniya Special Thali",
+    name: "Hotel Special Thali",
     description: "Dal, sabzi, rice, 4 rotis, salad, raita & sweet",
     price: 320,
     category: "Lunch",
@@ -300,7 +300,7 @@ export const MENU: MenuItem[] = [
 ];
 
 export const HOTEL = {
-  name: "Baniya Hotel",
+  name: "Hotel E-Menu",
   tagline: "Authentic flavours, served to your room",
   phone: "+919368042721",
   whatsapp: "919368042721",

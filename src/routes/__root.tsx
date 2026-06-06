@@ -78,15 +78,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Baniya Hotel \u2014 In-Room Dining" },
+      { title: "Hotel E-Menu \u2014 In-Room Dining" },
       {
         name: "description",
         content:
-          "Scan, browse and order authentic Indian food directly to your room at Baniya Hotel.",
+          "Scan, browse and order authentic Indian food directly to your room.",
       },
-      { name: "author", content: "Baniya Hotel" },
+      { name: "author", content: "Hotel E-Menu" },
       { name: "theme-color", content: "#7A1F1F" },
-      { property: "og:title", content: "Baniya Hotel \u2014 In-Room Dining" },
+      { property: "og:title", content: "Hotel E-Menu \u2014 In-Room Dining" },
       { property: "og:description", content: "Order delicious meals to your room in seconds." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
