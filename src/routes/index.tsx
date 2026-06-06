@@ -7,7 +7,9 @@ import { HotelHeader } from "@/components/HotelHeader";
 import { MenuCard } from "@/components/MenuCard";
 import { useRoomParam } from "@/lib/useRoomParam";
 
-const searchSchema = z.object({ room: z.string().optional() });
+const searchSchema = z.object({
+  room: z.union([z.string(), z.number()]).transform(String).optional(),
+});
 
 export const Route = createFileRoute("/")({
   validateSearch: (s) => searchSchema.parse(s),
