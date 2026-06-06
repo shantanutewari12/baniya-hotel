@@ -1,10 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { MenuItem } from "@/data/menu";
 
-export interface CartLine {
-  item: MenuItem;
-  qty: number;
-}
+export interface CartLine { item: MenuItem; qty: number }
 
 interface CartCtx {
   lines: CartLine[];
@@ -54,7 +51,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
     );
 
   const clear = () => setLines([]);
-
   const count = lines.reduce((s, l) => s + l.qty, 0);
   const total = lines.reduce((s, l) => s + l.qty * l.item.price, 0);
 
