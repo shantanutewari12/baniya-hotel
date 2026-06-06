@@ -3,7 +3,10 @@ import { z } from "zod";
 import { CheckCircle2, Phone } from "lucide-react";
 import { HOTEL } from "@/data/menu";
 
-const search = z.object({ name: z.string().optional(), room: z.string().optional() });
+const search = z.object({
+  name: z.union([z.string(), z.number()]).transform(String).optional(),
+  room: z.union([z.string(), z.number()]).transform(String).optional(),
+});
 
 export const Route = createFileRoute("/confirm")({
   validateSearch: (s) => search.parse(s),
