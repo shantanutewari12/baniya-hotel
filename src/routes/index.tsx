@@ -15,9 +15,9 @@ export const Route = createFileRoute("/")({
   validateSearch: (s) => searchSchema.parse(s),
   head: () => ({
     meta: [
-      { title: "Baniya Hotel \u2014 In-Room Dining Menu" },
+      { title: "Baniya Hotel — In-Room Dining Menu" },
       { name: "description", content: "Scan, browse and order authentic Indian food directly to your room at Baniya Hotel." },
-      { property: "og:title", content: "Baniya Hotel \u2014 In-Room Dining" },
+      { property: "og:title", content: "Baniya Hotel — In-Room Dining" },
       { property: "og:description", content: "Order delicious meals to your room in seconds." },
       { property: "og:type", content: "website" },
       { name: "theme-color", content: "#7A1F1F" },
@@ -60,7 +60,7 @@ function Index() {
         <div className="mx-auto max-w-2xl px-4 pb-6 pt-2">
           <p className="font-display text-2xl font-bold leading-tight">{HOTEL.tagline}</p>
           <p className="mt-1 text-sm text-primary-foreground/75">
-            Freshly prepared by our chefs \u2014 delivered hot to your room.
+            Freshly prepared by our chefs — delivered hot to your room.
           </p>
           <div className="relative mt-4">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />

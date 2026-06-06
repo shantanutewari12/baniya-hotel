@@ -15,7 +15,7 @@ export const Route = createFileRoute("/cart")({
   validateSearch: (s) => searchSchema.parse(s),
   head: () => ({
     meta: [
-      { title: "Your Cart \u2014 Baniya Hotel" },
+      { title: "Your Cart — Baniya Hotel" },
       { name: "description", content: "Review your order and send it to reception via WhatsApp." },
       { name: "robots", content: "noindex" },
     ],
@@ -39,7 +39,7 @@ function CartPage() {
     setErr(null);
 
     const itemsText = lines
-      .map((l) => `\u2022 ${l.item.name} x ${l.qty} - \u20B9${l.qty * l.item.price}`)
+      .map((l) => `• ${l.item.name} x ${l.qty} - \u20B9${l.qty * l.item.price}`)
       .join("\n");
 
     const msg =
@@ -48,7 +48,7 @@ function CartPage() {
       `*Room Number:* ${roomNo}\n\n` +
       `*Ordered Items:*\n${itemsText}\n\n` +
       `*Total Amount:* \u20B9${total}\n\n` +
-      `*Special Instructions:*\n${notes.trim() || "\u2014"}\n\n` +
+      `*Special Instructions:*\n${notes.trim() || "—"}\n\n` +
       `Please confirm this order.`;
 
     const url = `https://wa.me/${HOTEL.whatsapp}?text=${encodeURIComponent(msg)}`;
@@ -88,7 +88,7 @@ function CartPage() {
                       <p className="truncate font-semibold text-foreground">{l.item.name}</p>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {"\u20B9"}{l.item.price} \u00D7 {l.qty} ={" "}
+                      {"\u20B9"}{l.item.price} × {l.qty} ={" "}
                       <span className="font-semibold text-foreground">{"\u20B9"}{l.item.price * l.qty}</span>
                     </p>
                   </div>
@@ -128,7 +128,7 @@ function CartPage() {
               <div>
                 <label className="text-xs font-medium text-muted-foreground">Special instructions (optional)</label>
                 <textarea value={notes} onChange={(e) => setNotes(e.target.value)}
-                  rows={3} maxLength={400} placeholder="Less spicy, no onion, extra napkins\u2026"
+                  rows={3} maxLength={400} placeholder="Less spicy, no onion, extra napkins…"
                   className="mt-1 w-full resize-none rounded-lg border border-input bg-background px-3 py-2 text-foreground outline-none focus:ring-2 focus:ring-ring" />
               </div>
               {err && <p className="text-sm text-destructive">{err}</p>}
