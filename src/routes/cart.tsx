@@ -7,7 +7,9 @@ import { VegBadge } from "@/components/VegBadge";
 import { HOTEL } from "@/data/menu";
 import { Minus, Plus, Trash2, ArrowLeft } from "lucide-react";
 
-const searchSchema = z.object({ room: z.string().optional() });
+const searchSchema = z.object({
+  room: z.union([z.string(), z.number()]).transform(String).optional(),
+});
 
 export const Route = createFileRoute("/cart")({
   validateSearch: (s) => searchSchema.parse(s),
