@@ -300,7 +300,7 @@ export const MENU: MenuItem[] = [
 ];
 
 export const HOTEL = {
-  name: "Hotel E-Menu",
+  name: "Hotel PrideIN",
   tagline: "Authentic flavours, served to your room",
   phone: "+919368042721",
   whatsapp: "919368042721",

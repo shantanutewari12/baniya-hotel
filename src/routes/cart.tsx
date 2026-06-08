@@ -15,7 +15,7 @@ export const Route = createFileRoute("/cart")({
   validateSearch: (s) => searchSchema.parse(s),
   head: () => ({
     meta: [
-      { title: "Your Cart — Hotel E-Menu" },
+      { title: "Your Cart — Hotel PrideIN" },
       { name: "description", content: "Review your order and send it to reception via WhatsApp." },
       { name: "robots", content: "noindex" },
     ],
@@ -155,7 +155,7 @@ function CartPage() {
       .join("\n");
 
     const msg =
-      `🏨 *HOTEL E-MENU — ROOM SERVICE*\n` +
+      `🏨 *HOTEL PRIDEIN — ROOM SERVICE*\n` +
       `━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
       `👤 *Guest Name:*  ${name}\n` +
       `🚪 *Room No.:*  ${roomNo}\n` +

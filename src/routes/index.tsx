@@ -25,13 +25,13 @@ export const Route = createFileRoute("/")({
   validateSearch: (s) => searchSchema.parse(s),
   head: () => ({
     meta: [
-      { title: "Hotel E-Menu — In-Room Dining Menu" },
+      { title: "Hotel PrideIN — In-Room Dining Menu" },
       {
         name: "description",
         content:
           "Scan, browse and order authentic Indian food directly to your room.",
       },
-      { property: "og:title", content: "Hotel E-Menu — In-Room Dining" },
+      { property: "og:title", content: "Hotel PrideIN — In-Room Dining" },
       { property: "og:description", content: "Order delicious meals to your room in seconds." },
       { property: "og:type", content: "website" },
       { name: "theme-color", content: "#1A1208" },

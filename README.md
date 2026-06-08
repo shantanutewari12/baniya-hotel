@@ -1,4 +1,4 @@
-# Hotel E-Menu — In-Room Dining Web App
+# Hotel PrideIN — In-Room Dining Web App
 
 A premium, mobile-first web application for hotel guests to scan, browse, and order authentic Indian cuisine directly to their rooms.
 
